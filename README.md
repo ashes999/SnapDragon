@@ -14,8 +14,8 @@ Currently, Constellation supports:
 - Ruby (via JRuby)
 - Python (via Jython)
 
-I intended Constellation to be a foundational platform for creating more game engines powered by libGDX and your dynamic language of choice. To extend it, plug in your own choice of Java-powered language library.
+Constellation aims to be a foundational platform for creating more game engines powered by libGDX and your dynamic language of choice. To extend it, plug in your own choice of Java-powered language library.
 
-# Game Engines Leveraging Constellation
+# Game Engines Built With Constellation
 
 - [SnapDragon](https://github.com/ashes999/SnapDragon):  A Python-based game engine and ECS
