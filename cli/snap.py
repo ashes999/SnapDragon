@@ -1,8 +1,23 @@
+import distutils.dir_util
+import os
 import sys
 
+TEMPLATES_DIRECTORY = 'templates'
+LIBGDX_BASE_TEMPLATE = 'hello-world'
+
 def create(args):
-    target_folder = input("Please enter the project's path: ")
-    print("Copying to {0}".format(target_folder))
+    target_folder = input("New project's folder path: ")
+    
+    if not os.path.exists(target_folder):
+        
+        # Copy the base 4MB libGDX project. Later, when we have multiple templates,
+        # we copy this first, then overwrite/update to use Python for the specific example
+        # that the user requested.
+        os.makedirs(target_folder)    
+        distutils.dir_util.copy_tree("{0}/{1}".format(TEMPLATES_DIRECTORY, LIBGDX_BASE_TEMPLATE), target_folder)
+        print("Created {0}".format(target_folder))
+    else:
+        print("Can't use '{0}', that folder already exists.".format(target_folder))
 
 VALID_COMMANDS = { 'create': create }
 
