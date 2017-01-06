@@ -15,8 +15,19 @@ SnapDragon leverages libGDX with Jython to provide powerful, cross-platform capa
 
 # API Docs
 
-TBD
+API documentation is available in the `docs` folder.
 
-# Example Code/Projects
+# Example Projects
 
-Also TBD
+SnapDragon ships with several example projects. Some of these are quick-starts (eg. tower defense), others showcase features (eg. bitmap font text).
+
+To see the full list of available projects, run `snap create`. Enter the path for the new project, and the template number to generate.
+
+# Credits
+
+SnapDragon is possible on the shoulders of open-source projects, great and small. We are thankful to each and every individual contributer (and especially to the founders) of these projects:
+
+- [Jython](https://github.com/jythontools/jython)
+- [libGDX](https://github.com/libgdx/libgdx)
+- [pythonVSCode](https://github.com/DonJayamanne/pythonVSCode)
+- [Visual Studio Code](https://github.com/Microsoft/vscode) 
