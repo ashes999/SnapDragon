@@ -10,6 +10,7 @@ SnapDragon leverages libGDX with Jython to provide powerful, cross-platform capa
 - Copy the binaries somewhere accessible to the shell.
 - Run `snap create` to create a new project.
 - From the project directory, run `snap build <platform>`. Platforms are `web` (HTML5), `desktop` (builds Linux or Windows, whatever you're running on), and `android`.
+- Look in the `dist` folder for the final binaries.
 
 **Note:** For Android development, you first have to run `snap setup` and specify where the Android SDK is.
 
