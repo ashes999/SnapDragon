@@ -2,6 +2,6 @@
 // and update libGDX to the (future) latest version.
 project(":core") {
     dependencies {
-        compile "org.python:jython:2.7.0"
+        compile "org.python:jython-standalone:2.7.1b2"
     }
 }
