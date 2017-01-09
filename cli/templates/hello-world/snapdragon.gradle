@@ -1,8 +1,6 @@
 // Custom SnapDragon stuff. For when we rebuild the template 
 // and update libGDX to the (future) latest version.
 project(":core") {
-    apply plugin: "java"
-
     dependencies {
         compile "org.python:jython:2.7.0"
     }
