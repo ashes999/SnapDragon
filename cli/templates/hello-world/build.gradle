@@ -104,11 +104,12 @@ project(":core") {
     dependencies {
         compile "com.badlogicgames.gdx:gdx:$gdxVersion"
         compile "com.badlogicgames.gdx:gdx-box2d:$gdxVersion"
-        // SnapDragon changes
-        compile "org.python:jython:2.7.0"
     }
 }
 
 tasks.eclipse.doLast {
     delete ".project"
 }
+
+// Re-add when we regenerate this project
+apply from: 'snapdragon.gradle'
